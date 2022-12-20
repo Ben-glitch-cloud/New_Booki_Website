@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="./css/index.css" rel="stylesheet"> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,700"> 
+    <link href="/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+    <body>
+        <nav>
+            <img class="brand_logo" src="./images/logos/Booki@3x.png" alt="Booki logo"> 
+            <div class="listOfPagesCon"> 
+                <div class="pageOneItem">
+                    <a href="#allAccommodations">Accommodations</a>
+                </div> 
+                <div class="pageTwoItem">
+                    <a href="#activites">Activities</a>
+                </div>
+            </div>
+        </nav> 
+        <main>
+            <section class="formHeaders">
+                <h3>Find a place for your dream vacation</h3>  
+                <p>Downtown or in nature</p>
+            </section> 
+            <form class="formLarge">
+                <label><i class="fas fa-location-dot"></i></label> 
+                <input type="text" value="Marseille, France"> 
+                <input class="submitButtonInput" type="submit" value="Search">
+            </form>  
+            <form class="formSmall">
+                <label><i class="fas fa-location-dot fa-gl"></i></label> 
+                <input type="text" value="Marseille, France"> 
+                <button class="submitButtonInput" type="submit" value="Search"><i class="fa-sharp fa-solid fa-magnifying-glass fa-xl"></i></button>
+            </form>  
+            <section class="filtersCon">
+                <div class="filterHeader">
+                    <p>Filters</p> 
+                </div> 
+                <div class="filterType" id="lowCost"> 
+                    <div class="filterTypeSymbol">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+                    <p>Low Cost</p>
+                </div> 
+
+                <div class="filterType" id="family-Friendly"> 
+                    <div class="filterTypeSymbol">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <p>Family-friendly</p>
+                </div> 
+
+                <div class="filterType" id="romantic"> 
+                    <div class="filterTypeSymbol">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <p>Romantic</p>
+                </div> 
+
+                <div class="filterType" id="petsAllowed"> 
+                    <div class="filterTypeSymbol">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                    <p id="petsAllowedP">Pets allowed</p>
+                </div>
+            </section>  
+            <section>  
+                <div class="shortMessage">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>More than 500 accommodations are available in this city</p>
+                </div>
+            </section>
+            <section class="allAccommodation" id="allAccommodations">
+                <article class="accommodations">
+                  <h4>Accommodations in Marseille</h4> 
+                    <div class="accommodationCon">
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small//marcus-loke-WQJvWU_HZFo-unsplash.jpg">  
+                                <div class="locInfoCon">
+                                    <p class="locName">Auberge la Cannebire</p> 
+                                    <p class="locPrice">Night starting at <b>25$</b></p>    
+                                    <div class="starCon">
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                    </div>  
+                                </div> 
+                            </a>
+                        </div> 
+
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"> 
+                            <div class="locInfoCon">
+                                <p class="locName">Hotel du port</p>
+                                <p class="locPrice">Night starting at 25£</p> 
+                                <div class="starCon">
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                </div>  
+                            </div> 
+                            </a>
+                        </div> 
+
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">  
+                            <div class="locInfoCon">
+                                <p class="locName">Les Mouettes Hotel</p>
+                                <p class="locPrice">Night stating at 79$</p>
+                                <div class="starCon">
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                </div>  
+                            </div> 
+                            </a>
+                        </div> 
+
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"> 
+                            <div class="locInfoCon">
+                                <p class="locName">Hotel de la mer</p> 
+                                <p class="locPrice">Night starting at 64$</p>
+                                <div class="starCon">
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                </div>  
+                            </div>  
+                            </a>
+                        </div> 
+
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">  
+                            <div class="locInfoCon">
+                                <p class="locName">Auberge Le Painer</p> 
+                                <p class="locPrice">Night starting at 25$</p>
+                                <div class="starCon">
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                </div>  
+                            </div> 
+                        </a>
+                        </div> 
+
+                        <div class="accommodationItem"> 
+                            <a href="#" class="link">
+                            <img src="./images/hoildayphotos/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">  
+                            <div class="locInfoCon">
+                                <p class="locName">Hotel chez Amina</p>
+                                <p class="locPrice">Night starting at 96£</p>
+                                <div class="starCon">
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                </div>  
+                            </div> 
+                        </a>
+                        </div> 
+                    </div> 
+                    <p class="showMore">Show more</p>
+                </article> 
+                <article class="popularAccommdations"> 
+                    <div class="popularAccommdationsHeader">
+                        <h4>Most Popular</h4> 
+                        <i class="fa-solid fa-star"></i>
+                    </div> 
+                    <div class="popularAccommdationsCon"> 
+                        <a href="#" class="link">
+                        <div class="popularAccommdationsItem">  
+                            <img src="./images/hoildayphotos/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">   
+                                <div class="popularAccommdationItemInfo"> 
+                                    <div class="InfoCon">
+                                        <p class="locName">Morning Sun Hotel</p> 
+                                        <p class="locPrice">Night starting at 128£</p>  
+                                    </div>
+                                    <div class="starRatingPopuler">
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div>  
+                        </div> 
+                        </a> 
+                        <a href="#" class="link">
+                        <div class="popularAccommdationsItem"> 
+                            <img src="./images/hoildayphotos/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">  
+                                <div class="popularAccommdationItemInfo"> 
+                                    <div>
+                                        <p class="locName">Au coeur l'eau Bed and Breakfast</p> 
+                                        <p class="locPrice">Night starting at 71$</p>
+                                    </div>
+                                    <div class="starRatingPopuler">
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                        <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div> 
+                        </div> 
+                        </a> 
+                        <a href="#" class="link">
+                        <div class="popularAccommdationsItem"> 
+                            <img src="./images/hoildayphotos/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">  
+                            <div class="popularAccommdationItemInfo"> 
+                                <div>
+                                    <p class="locName">Tout bleu et Blanc Hotel</p> 
+                                    <p class="locPrice">Night starting at 58$</p>
+                                </div>
+                                <div class="starRatingPopuler">
+                                     <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                     <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                     <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                     <i class="blue-star fa-solid fa-star fa-2xs"></i>
+                                     <i class="grey-star fa-solid fa-star fa-2xs"></i>
+                                </div>
+                            </div> 
+                        </div> 
+                        </a>
+                    </div>
+                </article>
+            </section> 
+            <section id="activites">    
+                <article class="overLocation">
+                    <h4>Activities in Merseille</h4>  
+                    <div class="listOfLocations">
+                        <div class="itemOne">
+                            <p>Old Port</p>
+                        </div>
+                        <div class="itemTwoCon">
+                            <div class="innerItemOne">
+                                <p>Pomegues Fort</p>
+                            </div> 
+                            <div class="innerItemTwo">
+                                <p>Frioul Island</p>
+                            </div>
+                        </div> 
+                        <div class="itemTwo">
+                            <p>Calanques National Park</p>
+                        </div> 
+                        <div class="itemTwoCon">
+                            <div class="innerItemThree">
+                                <p>Notre-Dame-de-la-Grarde</p>
+                            </div> 
+                            <div class="innerItemFour">
+                                <p>Longchamp Park</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- new location list -->
+                    <div class="listOfLocationsTablet">
+                        <div class="itemLocationOneTablet">
+                            <p>Old Port</p>
+                        </div>
+                        <div class="itemLocationTwoTablet">
+                            <p>Pomegues Fort</p>
+                        </div>
+                        <div class="itemLocationThreeTablet">
+                            <p>Frioul Island</p>
+                        </div>
+                        <div class="itemLocationFourTablet">
+                            <p>Calanques National Park</p>
+                        </div>
+                        <div class="itemLocationFiveTablet">
+                            <p>Notre-Dame-de-la-Grarde</p>
+                        </div>
+                        <div class="itemLocationSixTablet">
+                            <p>Longchamp Park</p>
+                        </div>
+                    </div> 
+
+                </article>
+            </section>  
+            <footer>
+                <div>
+                    <ul> 
+                        <h4>About</h4>
+                        <li>Site Map</li> 
+                        <li>General Terms and Conditions</li> 
+                        <li>Data and Privacy</li>
+                    </ul>
+                </div> 
+                <div>
+                    <ul>
+                        <h4>Our Accommodations</h4>
+                        <li>Quality Assessment</li>
+                        <li>You have a hotel?</li>
+                    </ul>
+                </div> 
+                <div>   
+                    <ul>
+                        <h4>Assistance</h4>
+                        <li>Help Desk</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </footer>
+        </main> 
+    </body>
+</html>
