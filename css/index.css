@@ -28,8 +28,10 @@ a{
     font-family: 'Raleway', serif; 
     text-decoration: none; 
     margin: 0px; 
-    padding: 0px;
-} 
+    padding: 0px; 
+    color: black;
+}  
+
 
 /* Navigation bar */
 
@@ -62,41 +64,49 @@ nav{
 } 
 
 
-.pageOneItem{ 
+.navicationLinkAccommodations{ 
     display: flex; 
     align-items: center;
     height: 100%;  
     border-top: 2px solid #0065FC;
     color: #0065FC; 
     font-size: 12px; 
-    flex-grow: 1;
+    flex-grow: 1; 
+    color: black;
 }  
 
-.pageTwoItem{
+.navicationLinkActivities{
     display: flex;  
     flex-grow: 1;
     align-items: center;
     height: 100%;
-    font-size: 12px;
-}  
+    font-size: 12px; 
+    color: black;
+}   
 
-.pageOneItem a{
-    color: #0065FC;
+.navicationLinkAccommodations a:link{ 
+    color: black;
 } 
 
-.pageTwoItem a{
-    color: black;
+.navicationLinkAccommodations a:visited {
+    color: #0065FC;
 }  
+
+.navicationLinkActivities a:link{
+    color: black;
+} 
+
+
 
 /* nav bar phone size */ 
 
 @media only screen and (max-width: 991px){ 
 
-    .pageOneItem{
+    .navicationLinkAccommodations{
         font-size: 16px;
     }  
 
-    .pageTwoItem{
+    .navicationLinkActivities{
         font-size: 16px;
     } 
 
@@ -132,7 +142,7 @@ nav{
         font-size: 16px;  
     }
 
-    .pageOneItem{ 
+    .navicationLinkAccommodations{ 
         border-top: 3px solid white;
         border-bottom: #0065FC 2px solid;  
         width: auto;
@@ -144,7 +154,7 @@ nav{
         align-items: center;
     }   
 
-    .pageTwoItem{
+    .navicationLinkActivities{
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -230,7 +240,8 @@ input{
     font-weight: 700;
 } 
 
-.submitButtonInput{
+.submitButtonInputText{
+    display: block;
     background-color: #0065FC; 
     border: 2px solid #0065FC; 
     border-radius: 0px 10px 10px 0px; 
@@ -241,19 +252,23 @@ input{
     color: white;
 }  
 
-.submitButtonInput:hover{
+.submitButtonInputText:hover{
     background-color: #F2F2F2; 
     color: #0065FC;
-}  
+}   
+
+.submitButtonInputIcon{
+    display: none;
+}
 
 /* form for phone size */
 
 @media only screen and (max-width: 768px) {
-    .formLarge{
+    /* .formLarge{
         display: none;
-    } 
+    }  */
 
-    .formSmall{
+    .formLarge{
         display: inline-flex;   
         position: relative; 
         left: 5px;
@@ -262,20 +277,33 @@ input{
         margin: 30px 5% 30px 5%;
     }   
 
-    .formSmall label{
+    .formLarge label{
         width: 45px;
         height: 45px;
     }
 
-    .formSmall input{
+    .formLarge input{
         width: 230px;
-    }
+    } 
 
-    .submitButtonInput{
+    .submitButtonInputText{
+        display: none;
+    }
+ 
+    .submitButtonInputIcon{ 
+        display: block;
         border-radius: 10px 10px 10px 10px; 
         padding: 0px 16px; 
         position: relative;
         right: 10px;
+        background-color: #0065FC; 
+        border: 2px solid #0065FC;  
+        color: #DEEBFF;
+    } 
+
+    .submitButtonInputIcon:hover{
+        background-color: white; 
+        color: #0065FC;
     }
 }
 
@@ -727,7 +755,7 @@ input{
     margin-top: 40px;
 }  
 
-.listOfLocations{
+.listOfLocationActivities{
     display: flex; 
     flex-direction: row;  
     justify-content: space-between;  
@@ -740,7 +768,7 @@ input{
     box-sizing: border-box;    
 }
 
-.itemOne, .itemTwo{
+.activitiesCardLargeItemOne, .activitiesCardLargeItemTwo{
     background: red; 
     flex-grow: 1; 
     /* go over this later */
@@ -753,7 +781,7 @@ input{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
 }     
 
-.itemTwoCon{ 
+.activitiesInnerContainer{ 
     display: flex;
     flex-direction: column;  
     flex-wrap: wrap;
@@ -766,7 +794,7 @@ input{
     row-gap: 30px;
 }  
 
-.innerItemOne, .innerItemTwo, .innerItemThree, .innerItemFour{
+.activitieSmallCardItemOne, .activitieSmallCardItemTwo, .activitieSmallCardItemThree, .activitieSmallCardItemFour{
     min-width: 200.50px; 
     max-width: 200.50px;  
     flex-grow: 1.1;    
@@ -776,7 +804,7 @@ input{
     position: relative;
 } 
 
-.itemOne p, .itemTwo p, .innerItemOne p, .innerItemTwo p, .innerItemThree p, .innerItemFour p{
+.activitiesCardLargeItemOne p, .activitiesCardLargeItemTwo p, .activitieSmallCardItemOne p, .activitieSmallCardItemTwo p, .activitieSmallCardItemThree p, .activitieSmallCardItemFour p{
     position: absolute;  
     font-size: 12px;
     left: 0px;
@@ -790,14 +818,14 @@ input{
     font-weight: 700;
 }
 
-.itemOne {
+.activitiesCardLargeItemOne {
     background-image: url("/images/hoildayphotos/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
 } 
 
-.itemTwo{
+.activitiesCardLargeItemTwo{
     background-image: url("/images/hoildayphotos/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
@@ -805,28 +833,28 @@ input{
 }
 
 
-.innerItemOne{
+.activitieSmallCardItemOne{
     background-image: url("/images/hoildayphotos/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
 } 
 
-.innerItemTwo{
+.activitieSmallCardItemTwo{
     background-image: url("/images/hoildayphotos/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
 } 
 
-.innerItemThree{
+.activitieSmallCardItemThree{
     background-image: url("/images/hoildayphotos/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
 } 
 
-.innerItemFour{
+.activitieSmallCardItemFour{
     background-image: url("/images/hoildayphotos/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
@@ -921,7 +949,7 @@ input{
 /* location 969 width */
 
 @media only screen and (max-width: 969px) {
-    .listOfLocations{
+    .listOfLocationActivities{
         display: none;
     } 
 
