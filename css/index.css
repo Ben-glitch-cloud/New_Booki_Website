@@ -63,16 +63,13 @@ nav{
     margin: 0px 20px;
 } 
 
-
 .navicationLinkAccommodations{ 
     display: flex; 
     align-items: center;
     height: 100%;  
-    border-top: 2px solid #0065FC;
-    color: #0065FC; 
     font-size: 12px; 
     flex-grow: 1; 
-    color: black;
+    border-top: 2px solid white;
 }  
 
 .navicationLinkActivities{
@@ -81,22 +78,24 @@ nav{
     align-items: center;
     height: 100%;
     font-size: 12px; 
-    color: black;
-}   
+    border-top: 2px solid white;
+}    
 
-.navicationLinkAccommodations a:link{ 
-    color: black;
+.navicationLinkActivities:hover{
+    border-top: 2px solid #0065FC;
 } 
 
-.navicationLinkAccommodations a:visited {
-    color: #0065FC;
-}  
+.navicationLinkActivities:hover a{
+    color: #0065FC; 
+}
 
-.navicationLinkActivities a:link{
-    color: black;
+.navicationLinkAccommodations:hover{
+    border-top: 2px solid #0065FC;
 } 
 
-
+.navicationLinkAccommodations:hover a{
+    color: #0065FC; 
+}
 
 /* nav bar phone size */ 
 
@@ -143,8 +142,8 @@ nav{
     }
 
     .navicationLinkAccommodations{ 
-        border-top: 3px solid white;
-        border-bottom: #0065FC 2px solid;  
+        border-top: 2px solid white;
+        border-bottom: #F2F2F2 2px solid;  
         width: auto;
         margin: 0px 0px; 
         padding: 0px; 
@@ -152,15 +151,35 @@ nav{
         display: flex; 
         justify-content: center;
         align-items: center;
-    }   
+    }    
+
+    .navicationLinkAccommodations:hover{
+        border-bottom: #0065FC 3px solid; 
+        border-top: white 3px solid;  
+    } 
+
+    .navicationLinkAccommodations:hover a{
+        color: #0065FC;
+    }
 
     .navicationLinkActivities{
+        border-top: 2px solid white; 
+        border-bottom: #F2F2F2 2px solid;  
         display: flex; 
         justify-content: center;
         align-items: center;
         margin: 0px 0px; 
         padding: 0px;
         width: calc(100% / 2);
+    }
+
+    .navicationLinkActivities:hover{
+        border-bottom: #0065FC 3px solid; 
+        border-top: white 3px solid;    
+    } 
+
+    .navicationLinkActivities:hover a{
+        color: #0065FC;
     }
 
     .brand_logo{
